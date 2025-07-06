@@ -1,0 +1,85 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "(🔥) WASHEDZ HUB",
+   LoadingTitle = "WASHEDZ Loading",
+   LoadingSubtitle = "discord.gg/FmMuvkaWvG",
+   ShowText = "WASHEDZ HUB",
+   Theme = "Bloom",
+   ToggleUIKeybind = "K",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "WashedzHub",
+      FileName = "WashedzConfig"
+   }
+})
+
+-- Public Scripts Tab
+local PublicTab = Window:CreateTab("Public Scripts", 4483362458)
+
+PublicTab:CreateButton({
+    Name = "Defi Script (Steal a Brainrot)",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastefy.app/bptRwz8E/raw'))()
+    end
+})
+
+PublicTab:CreateButton({
+    Name = "Doli Loader (Steal a Brainrot)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/loader/refs/heads/main/main.lua", true))()
+    end
+})
+
+-- My Scripts Tab
+local MyTab = Window:CreateTab("My Scripts", 4483362458)
+
+MyTab:CreateButton({
+    Name = "Washedz Steal a Brainrot Full Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/washedz/WASHEDZ-/refs/heads/main/WASHEDZ%20HUG"))()
+    end
+})
+
+MyTab:CreateButton({
+    Name = "Washedz Grow a Garden 🪴",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/hAE55EE6"))()
+    end
+})
+
+MyTab:CreateButton({
+    Name = "Rivals (Coming Soon)",
+    Callback = function()
+        Rayfield:Notify({
+            Title = "Coming Soon",
+            Content = "Rivals Script is under development!",
+            Duration = 3
+        })
+    end
+})
+
+-- Info Tab
+local InfoTab = Window:CreateTab("Info", 4483362458)
+
+InfoTab:CreateButton({
+    Name = "Made by WASHEDZ",
+    Callback = function()
+        Rayfield:Notify({
+            Title = "WASHEDZ HUB",
+            Content = "Made by WASHEDZ",
+            Duration = 3
+        })
+    end
+})
+
+InfoTab:CreateButton({
+    Name = "Updates Soon In Discord 🤭",
+    Callback = function()
+        Rayfield:Notify({
+            Title = "Join Discord",
+            Content = "Updates coming soon in discord.gg/FmMuvkaWvG",
+            Duration = 3
+        })
+    end
+})
